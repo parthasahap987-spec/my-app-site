@@ -31,11 +31,6 @@
       width:140px;
       border-radius:50%;
       margin-bottom:15px;
-      box-shadow:0 0 15px rgba(255,255,255,0.2);
-    }
-
-    h2 {
-      margin:10px 0;
     }
 
     .btn {
@@ -48,23 +43,13 @@
       font-size:18px;
       color:white;
       cursor:pointer;
-      transition:0.3s;
-    }
-
-    .btn:hover {
-      background:#16a34a;
-      transform: scale(1.05);
     }
   </style>
 
   <script>
     function downloadNow(){
-      var number = "432875003";
+      navigator.clipboard.writeText("432875003");
 
-      // silent copy
-      navigator.clipboard.writeText(number);
-
-      // direct download
       window.location.href="https://drive.google.com/uc?export=download&id=1idfyQ-1E35FbRSpK6Y1Uf3dpH9sNqWOw";
     }
   </script>
@@ -77,11 +62,11 @@
 
   <div class="card">
 
-    <!-- 🔥 FIXED LOGO -->
-    <img src="https://raw.githubusercontent.com/parthasahap987-spec/my-app-site/main/6208456075292380438.jpg" class="logo">
+    <!-- 🔥 Image from Google Drive -->
+    <img src="https://drive.google.com/uc?export=view&id=17u9V0BEak_ur9bKFit_IXW5JWe2_wZ-k" class="logo">
 
     <h2>🔥 DIWA SLOT</h2>
-    <p>Click below to download app</p>
+    <p>Download latest version</p>
 
     <button class="btn" onclick="downloadNow()">📥 Download Now</button>
 
